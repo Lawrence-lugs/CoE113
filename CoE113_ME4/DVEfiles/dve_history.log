@@ -1,0 +1,356 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /nfs/home/lawrence.quizon/CoE113_ME2/tb_reg.vpd -design V1} {gui_open_db -file /nfs/home/lawrence.quizon/CoE113_ME2/tb_reg.vpd -design V2} {gui_open_db -file /nfs/home/lawrence.quizon/CoE113_ME2/tb_mem.vpd -design V1} {gui_open_db -file /nfs/home/lawrence.quizon/CoE113_ME2/tb_mem.vpd -design V2} {gui_open_db -file /nfs/home/lawrence.quizon/CoE113_ME1/sim/tb_updown.vpd -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 714
+gui_set_state_value -category Layout -key child_console_size_y -value 175
+gui_set_state_value -category Layout -key child_data_size_x -value 170
+gui_set_state_value -category Layout -key child_data_size_y -value 406
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 170
+gui_set_state_value -category Layout -key child_hier_size_y -value 406
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 377
+gui_set_state_value -category Layout -key child_source_size_y -value 401
+gui_set_state_value -category Layout -key child_wave_colname -value 119
+gui_set_state_value -category Layout -key child_wave_colvalue -value 119
+gui_set_state_value -category Layout -key child_wave_left -value 243
+gui_set_state_value -category Layout -key child_wave_right -value 591
+gui_set_state_value -category Layout -key main_pos_x -value 8
+gui_set_state_value -category Layout -key main_pos_y -value 31
+gui_set_state_value -category Layout -key main_size_x -value 722
+gui_set_state_value -category Layout -key main_size_y -value 735
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 844
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 655
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 484
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 31
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1323
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 814
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file /nfs/home/lawrence.quizon/CoE113_ME2/tb_reg.vpd -design V1
+gui_list_select -id Data.1 { tb_reg.clk  tb_reg.nrst  {tb_reg.addr_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.data_out_mem[31:0]}  tb_reg.wr_en_mem  {tb_reg.rd_dataA[31:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_addrB[4:0]}  tb_reg.wr_en_regfile  {tb_reg.wr_addr[4:0]}  {tb_reg.wr_data[31:0]}  {tb_reg.i[31:0]}   }
+gui_list_show_data -select -id  Data.1   tb_reg.clk
+gui_list_select -id Data.1 -selected  {  }
+gui_close_db -file /nfs/home/lawrence.quizon/CoE113_ME2/tb_reg.vpd -design V1
+gui_open_db -file /nfs/home/lawrence.quizon/CoE113_ME2/tb_reg.vpd -design V1
+gui_list_select -id Data.1 { tb_reg.clk  tb_reg.nrst  {tb_reg.addr_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.data_out_mem[31:0]}  tb_reg.wr_en_mem  {tb_reg.rd_dataA[31:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_addrB[4:0]}  tb_reg.wr_en_regfile  {tb_reg.wr_addr[4:0]}  {tb_reg.wr_data[31:0]}  tb_reg.wr_en_regfile  {tb_reg.wr_addr[4:0]}  {tb_reg.wr_data[31:0]}  tb_reg.wr_en_regfile  {tb_reg.rd_addrB[4:0]}  tb_reg.wr_en_regfile  {tb_reg.rd_addrB[4:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_addrB[4:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_dataA[31:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_dataA[31:0]}  tb_reg.wr_en_mem  {tb_reg.rd_dataA[31:0]}  tb_reg.wr_en_mem  {tb_reg.data_out_mem[31:0]}  tb_reg.wr_en_mem  {tb_reg.data_out_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.data_out_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.addr_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.addr_mem[31:0]}  tb_reg.nrst  {tb_reg.addr_mem[31:0]}  tb_reg.nrst  {tb_reg.addr_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.data_out_mem[31:0]}  tb_reg.wr_en_mem  {tb_reg.rd_dataA[31:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_addrB[4:0]}  tb_reg.wr_en_regfile  {tb_reg.wr_addr[4:0]}  {tb_reg.wr_data[31:0]}  {tb_reg.i[31:0]}   }
+gui_open_window Watch TopLevel.1
+gui_list_add -id Watch.1 { tb_reg.clk tb_reg.nrst {tb_reg.addr_mem[31:0]} {tb_reg.data_in_mem[31:0]} {tb_reg.data_out_mem[31:0]} tb_reg.wr_en_mem {tb_reg.rd_dataA[31:0]} {tb_reg.rd_dataB[31:0]} {tb_reg.rd_addrA[4:0]} {tb_reg.rd_addrB[4:0]} tb_reg.wr_en_regfile {tb_reg.wr_addr[4:0]} {tb_reg.wr_data[31:0]} {tb_reg.i[31:0]} }
+gui_watch_page_activate -id Watch.1 -page {Watch 2}
+gui_watch_page_activate -id Watch.1 -page {Watch 1}
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Data.1 { tb_reg.clk  tb_reg.nrst  {tb_reg.addr_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.data_out_mem[31:0]}  tb_reg.wr_en_mem  {tb_reg.rd_dataA[31:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_addrB[4:0]}  tb_reg.wr_en_regfile  {tb_reg.wr_addr[4:0]}  {tb_reg.wr_data[31:0]}  {tb_reg.wr_addr[4:0]}  {tb_reg.wr_data[31:0]}  {tb_reg.wr_addr[4:0]}  tb_reg.wr_en_regfile  {tb_reg.wr_addr[4:0]}  tb_reg.wr_en_regfile  {tb_reg.rd_addrB[4:0]}  tb_reg.wr_en_regfile  {tb_reg.rd_addrB[4:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_addrB[4:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_dataA[31:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_dataA[31:0]}  tb_reg.wr_en_mem  {tb_reg.rd_dataA[31:0]}  tb_reg.wr_en_mem  {tb_reg.data_out_mem[31:0]}  tb_reg.wr_en_mem  {tb_reg.data_out_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.data_out_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.addr_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.addr_mem[31:0]}  {tb_reg.data_in_mem[31:0]}  {tb_reg.data_out_mem[31:0]}  tb_reg.wr_en_mem  {tb_reg.rd_dataA[31:0]}  {tb_reg.rd_dataB[31:0]}  {tb_reg.rd_addrA[4:0]}  {tb_reg.rd_addrB[4:0]}  tb_reg.wr_en_regfile  {tb_reg.wr_addr[4:0]}  {tb_reg.wr_data[31:0]}  {tb_reg.i[31:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { tb_reg.clk tb_reg.nrst {tb_reg.addr_mem[31:0]} {tb_reg.data_in_mem[31:0]} {tb_reg.data_out_mem[31:0]} tb_reg.wr_en_mem {tb_reg.rd_dataA[31:0]} {tb_reg.rd_dataB[31:0]} {tb_reg.rd_addrA[4:0]} {tb_reg.rd_addrB[4:0]} tb_reg.wr_en_regfile {tb_reg.wr_addr[4:0]} {tb_reg.wr_data[31:0]} {tb_reg.i[31:0]} } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 1219 328000
+gui_list_select -id Wave.1 -selected  { {tb_reg.addr_mem[31:0]}   }
+gui_marker_move -id  Wave.1 C1 16024
+gui_wv_scroll_hslidermove -id  Wave.1 2
+gui_wv_zoom_timerange -id  Wave.1 12018 47501
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 4101
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_marker_move -id  Wave.1 C1 11869
+gui_marker_move -id  Wave.1 C1 26348
+gui_marker_move -id  Wave.1 C1 30636
+gui_marker_move -id  Wave.1 C1 21128
+gui_list_select -id Data.1 -selected  {  }
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_list_select -id Wave.1 -selected  {  }
+gui_wv_scroll_hslidermove -id  Wave.1 20
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_list_select -id Wave.1 -selected  { {tb_reg.wr_addr[4:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.wr_data[31:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.addr_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_expand -id  Wave.1   {tb_reg.data_in_mem[31:0]}
+gui_list_collapse -id  Wave.1   {tb_reg.data_in_mem[31:0]}
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.addr_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.addr_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.addr_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.addr_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.addr_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.addr_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.addr_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_reg.addr_mem[31:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_marker_move -id  Wave.1 C1 8265
+gui_marker_move -id  Wave.1 C1 9197
+gui_list_select -id Wave.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_close_db -file /nfs/home/lawrence.quizon/CoE113_ME2/tb_reg.vpd -design V1
+gui_open_db -file /nfs/home/lawrence.quizon/CoE113_ME2/tb_reg_new.vpd -design V1
+gui_list_expand -id  Hier.1   tb_reg
+gui_list_select -id Hier.1 -current_item_name tb_reg.MEM -current_item_type Scope  -selected  { tb_reg.MEM   }
+gui_list_select -id Hier.1 -current_item_name tb_reg.REGFILE -current_item_type Scope  -selected  { tb_reg.REGFILE   }
+gui_list_select -id Hier.1 -current_item_name tb_reg.MEM -current_item_type Scope  -selected  { tb_reg.MEM   }
+gui_list_select -id Hier.1 -current_item_name tb_reg.REGFILE -current_item_type Scope  -selected  { tb_reg.REGFILE   }
+gui_list_select -id Data.1 -selected  { tb_reg.REGFILE.wr_en   }
+gui_list_select -id Data.1 -selected  { {tb_reg.REGFILE.rd_addrA[4:0]}  {tb_reg.REGFILE.rd_addrB[4:0]}  {tb_reg.REGFILE.rd_dataA[31:0]}  {tb_reg.REGFILE.rd_dataB[31:0]}  {tb_reg.REGFILE.wr_addr[4:0]}  {tb_reg.REGFILE.wr_data[31:0]}  tb_reg.REGFILE.clk  tb_reg.REGFILE.nrst  tb_reg.REGFILE.wr_en   }
+gui_list_select -id Hier.1 -current_item_name tb_reg.REGFILE -current_item_type Scope  -selected  { tb_reg.MEM  tb_reg.REGFILE   }
+gui_list_select -id Hier.1 -current_item_name tb_reg.MEM -current_item_type Scope  -selected  { tb_reg.MEM   }
+gui_list_select -id Data.1 -selected  { tb_reg.MEM.clk  tb_reg.MEM.wr_en  {tb_reg.MEM.addr[31:0]}  {tb_reg.MEM.data_in[31:0]}  {tb_reg.MEM.data_out[31:0]}  {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_select -id Hier.1 -current_item_name tb_reg.REGFILE -current_item_type Scope  -selected  { tb_reg.REGFILE   }
+gui_list_select -id Data.1 -selected  { tb_reg.REGFILE.wr_en   }
+gui_list_select -id Data.1 -selected  { {tb_reg.REGFILE.rd_addrA[4:0]}  {tb_reg.REGFILE.rd_addrB[4:0]}  {tb_reg.REGFILE.rd_dataA[31:0]}  {tb_reg.REGFILE.rd_dataB[31:0]}  {tb_reg.REGFILE.wr_addr[4:0]}  {tb_reg.REGFILE.wr_data[31:0]}  tb_reg.REGFILE.clk  tb_reg.REGFILE.nrst  tb_reg.REGFILE.wr_en   }
+gui_open_window Wave
+gui_list_add -id Wave.2 -from Data.1 { {tb_reg.REGFILE.rd_addrA[4:0]} {tb_reg.REGFILE.rd_addrB[4:0]} {tb_reg.REGFILE.rd_dataA[31:0]} {tb_reg.REGFILE.rd_dataB[31:0]} {tb_reg.REGFILE.wr_addr[4:0]} {tb_reg.REGFILE.wr_data[31:0]} tb_reg.REGFILE.clk tb_reg.REGFILE.nrst tb_reg.REGFILE.wr_en } -insertionbar
+gui_wv_zoom_timerange -id  Wave.2 0 284104
+gui_wv_zoom_timerange -id  Wave.2 318245 328000
+gui_wv_scroll_hslidermove -id  Wave.2 2244
+gui_wv_scroll_hslidermove -id  Wave.2 0
+gui_wv_zoom_timerange -id  Wave.2 0 328000
+gui_marker_select -id  Wave.2 { C1 }
+gui_marker_move -id  Wave.2 C1 39061
+gui_wv_zoom_timerange -id  Wave.2 4595 25849
+gui_wv_zoom_timerange -id  Wave.2 8263 9119
+gui_wv_zoom_timerange -id  Wave.2 8479 8524
+gui_wv_zoom_timerange -id  Wave.2 8491 8502
+gui_wv_zoom_timerange -id  Wave.2 36579 56698
+gui_wv_scroll_hslidermove -id  Wave.2 501
+gui_close_window -window TopLevel.2
+gui_list_select -id Hier.1 -current_item_name tb_reg.MEM -current_item_type Scope  -selected  { tb_reg.MEM   }
+gui_list_select -id Data.1 -selected  { {tb_reg.MEM.data_in[31:0]}   }
+gui_sg_create  Group2 
+gui_list_add_group -id  Wave.2   {Group2} 
+gui_list_add  -id  Wave.2   -after Group2 {{tb_reg.MEM.data_in[31:0]}}
+gui_list_select -id Data.1 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_sg_create  Group3 
+gui_list_add_group -id  Wave.2   {Group3} 
+gui_list_add  -id  Wave.2   -after Group3 {{tb_reg.MEM.data_out[31:0]}}
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_in[31:0]}   }
+gui_marker_move -id  Wave.2 C1 21211
+gui_wv_scroll_hslidermove -id  Wave.2 0
+gui_list_select -id Wave.2 -selected  {  }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_list_move  -id  Wave.2    -sid  Wave.2   -after {tb_reg.MEM.data_in[31:0]} {{tb_reg.MEM.data_out[31:0]}} 
+gui_list_select -id Wave.2 -selected  {  }
+gui_list_select -id Data.1 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Data.1 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_add  -id  Wave.2   -after {tb_reg.MEM.data_out[31:0]} {{tb_reg.MEM.memory[0:1023][7:0]}} 
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_expand -id  Wave.2   {tb_reg.MEM.memory[0:1023][7:0]}
+gui_list_collapse -id  Wave.2   {tb_reg.MEM.memory[0:1023][7:0]}
+gui_list_select -id Data.1 -selected  {  }
+gui_src_highlight_item -id Source.1 -lfrom 28 -idxfrom 11 -fileIdFrom 0 -lto 28 -idxto 22 -fileIdTo 0 -selection {in1_lh_q_lh} -selectionId 0 -replace 0
+gui_list_select -id Wave.2 -selected  { {New Group}   }
+gui_wv_scroll_hslidermove -id  Wave.2 0
+gui_wv_scroll_hslidermove -id  Wave.2 0
+gui_list_select -id Wave.2 -selected  {  }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_select -id Wave.2 -selected  {  }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_in[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_in[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_in[31:0]}   }
+gui_list_expand -id  Wave.2   {tb_reg.MEM.data_in[31:0]}
+gui_list_collapse -id  Wave.2   {tb_reg.MEM.data_in[31:0]}
+gui_list_select -id Hier.1 -current_item_name tb_reg -current_item_type Scope  -selected  { tb_reg   }
+gui_list_select -id Data.1 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_sg_create  Group4 
+gui_list_add_group -id  Wave.2   {Group4} 
+gui_list_add  -id  Wave.2   -after Group4 {{tb_reg.data_in_mem[31:0]}}
+gui_marker_move -id  Wave.2 C1 8456
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_sg_create  Group5 
+gui_list_add_group -id  Wave.2   {Group5} 
+gui_list_add  -id  Wave.2   -after Group5 {{tb_reg.data_out_mem[31:0]}}
+gui_marker_move -id  Wave.2 C1 4545
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_move  -id  Wave.2    -sid  Wave.2   -after {tb_reg.data_in_mem[31:0]} {{tb_reg.data_out_mem[31:0]}} 
+gui_delete_selected -id  Wave.2
+gui_delete_selected -id  Wave.2
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_marker_move -id  Wave.2 C1 13072
+gui_wv_scroll_hslidermove -id  Wave.2 0
+gui_list_select -id Data.1 -selected  { tb_reg.wr_en_mem   }
+gui_marker_move -id  Wave.2 C1 3876
+gui_marker_move -id  Wave.2 C1 2149
+gui_marker_move -id  Wave.2 C1 8245
+gui_marker_move -id  Wave.2 C1 10000
+gui_list_select -id Hier.1 -current_item_name tb_reg.MEM -current_item_type Scope  -selected  { tb_reg.MEM   }
+gui_list_expand -id  Data.1   {tb_reg.MEM.memory[0:1023][7:0]}
+gui_list_collapse -id  Data.1   {tb_reg.MEM.memory[0:1023][7:0]}
+gui_list_expand -id  Data.1   {tb_reg.MEM.memory[0:1023][7:0]}
+gui_list_collapse -id  Data.1   {tb_reg.MEM.memory[0:1023][7:0]}
+gui_data_toggle_value_annotate -id  Data.1   {tb_reg.MEM.memory[0:1023][7:0]}
+gui_list_select -id Data.1 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_expand -id  Data.1   {tb_reg.MEM.memory[0:1023][7:0]}
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Data.1 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Hier.1 -current_item_name tb_reg.REGFILE -current_item_type Scope  -selected  { tb_reg.REGFILE   }
+gui_marker_move -id  Wave.2 C1 8245
+gui_wv_scroll_hslidermove -id  Wave.2 190
+gui_list_select -id Wave.2 -selected  { {tb_reg.REGFILE.wr_data[31:0]}   }
+gui_marker_move -id  Wave.2 C1 15891
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scroll_hslidermove -id  Wave.2 69
+gui_list_select -id Wave.2 -selected  { {tb_reg.REGFILE.rd_addrA[4:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.REGFILE.rd_addrB[4:0]}   }
+gui_marker_move -id  Wave.2 C1 18040
+gui_wv_zoom_timerange -id  Wave.2 17680 39018
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_marker_move -id  Wave.2 C1 16517
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_marker_move -id  Wave.2 C1 19955
+gui_marker_move -id  Wave.2 C1 22160
+gui_marker_move -id  Wave.2 C1 25497
+gui_marker_move -id  Wave.2 C1 26570
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_in[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_in[31:0]}   }
+gui_marker_move -id  Wave.2 C1 13453
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_in[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_wv_zoom_timerange -id  Wave.2 10351 30232
+gui_list_select -id Wave.2 -selected  {  }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_marker_move -id  Wave.2 C1 17041
+gui_marker_move -id  Wave.2 C1 19656
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.REGFILE.wr_addr[4:0]}   }
+gui_marker_move -id  Wave.2 C1 19357
+gui_marker_move -id  Wave.2 C1 13005
+gui_list_select -id Wave.2 -selected  { {tb_reg.REGFILE.wr_data[31:0]}   }
+gui_list_select -id Wave.2 -selected  {  }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_in[31:0]}   }
+gui_list_select -id Wave.2 { {tb_reg.MEM.data_in[31]}  {tb_reg.MEM.data_in[30]}  {tb_reg.MEM.data_in[29]}  {tb_reg.MEM.data_in[28]}  {tb_reg.MEM.data_in[27]}  {tb_reg.MEM.data_in[26]}  {tb_reg.MEM.data_in[25]}  {tb_reg.MEM.data_in[24]}  {tb_reg.MEM.data_in[23]}  {tb_reg.MEM.data_in[22]}  {tb_reg.MEM.data_in[21]}  {tb_reg.MEM.data_in[20]}  {tb_reg.MEM.data_in[19]}  {tb_reg.MEM.data_in[18]}  {tb_reg.MEM.data_in[17]}  {tb_reg.MEM.data_in[16]}  {tb_reg.MEM.data_in[15]}  {tb_reg.MEM.data_in[14]}  {tb_reg.MEM.data_in[13]}  {tb_reg.MEM.data_in[12]}  {tb_reg.MEM.data_in[11]}  {tb_reg.MEM.data_in[10]}  {tb_reg.MEM.data_in[9]}  {tb_reg.MEM.data_in[8]}  {tb_reg.MEM.data_in[7]}  {tb_reg.MEM.data_in[6]}  {tb_reg.MEM.data_in[5]}  {tb_reg.MEM.data_in[4]}  {tb_reg.MEM.data_in[3]}  {tb_reg.MEM.data_in[2]}  {tb_reg.MEM.data_in[1]}  {tb_reg.MEM.data_in[0]}  {tb_reg.MEM.data_out[31:0]}  {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.data_in_mem[31:0]}  {tb_reg.data_out_mem[31:0]}   }
+gui_list_select -id Wave.2 -selected  {  }
+gui_save_session -reload -default_file
+gui_marker_move -id  Wave.2 C1 15135
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.data_out[31:0]}   }
+gui_list_select -id Wave.2 -selected  { {tb_reg.MEM.memory[0:1023][7:0]}   }
+gui_list_select -id Wave.2 -selected  { tb_reg.REGFILE.nrst   }
+gui_wv_scroll_hslidermove -id  Wave.2 281
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_list_select -id Wave.2 -selected  { {tb_reg.REGFILE.rd_dataB[31:0]}   }
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  page
+gui_wv_scrollright -id  Wave.2  page
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollright -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_scrollleft -id  Wave.2  line
+gui_wv_zoom_timerange -id  Wave.2 18386 38267
+gui_save_session -reload -default_file
+gui_wv_scroll_hslidermove -id  Wave.2 9084
+gui_close_window -window TopLevel.1

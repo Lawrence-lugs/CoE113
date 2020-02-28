@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : rf
+Version: I-2013.12
+Date   : Wed Feb  5 09:52:29 2020
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /nfs/home/lawrence.quizon/CoE113_ME1/lib/saed90nm_typ.db)
+
+Number of ports:                          114
+Number of nets:                          3373
+Number of cells:                         3323
+Number of combinational cells:           2331
+Number of sequential cells:               992
+Number of macros/black boxes:               0
+Number of buf/inv:                        336
+Number of references:                       8
+
+Combinational area:              30234.009916
+Buf/Inv area:                     1857.945648
+Noncombinational area:           31997.952515
+Macro/Black Box area:                0.000000
+Net Interconnect area:            6624.261242
+
+Total cell area:                 62231.962431
+Total area:                      68856.223673
+1

@@ -1,0 +1,217 @@
+set_app_var search_path "$search_path mapped lib cons rtl . /nfs/home/lawrence.quizon/CoE113_ME1/lib/ /nfs/home/lawrence.quizon/CoE113_ME1/cons/"
+. /nfs/cad/synopsys/syn/I-2013.12/libraries/syn /nfs/cad/synopsys/syn/I-2013.12/minpower/syn /nfs/cad/synopsys/syn/I-2013.12/dw/syn_ver /nfs/cad/synopsys/syn/I-2013.12/dw/sim_ver mapped lib cons rtl . /nfs/home/lawrence.quizon/CoE113_ME1/lib/ /nfs/home/lawrence.quizon/CoE113_ME1/cons/
+set_app_var target_library saed90nm_typ.db
+saed90nm_typ.db
+set_app_var link_library "* $target_library"
+* saed90nm_typ.db
+read_verilog reg.v
+Loading db file '/nfs/home/lawrence.quizon/CoE113_ME1/lib/saed90nm_typ.db'
+Loading db file '/nfs/cad/synopsys/syn/I-2013.12/libraries/syn/gtech.db'
+Loading db file '/nfs/cad/synopsys/syn/I-2013.12/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Loading verilog file '/nfs/home/lawrence.quizon/CoE113_ME2/reg.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /nfs/home/lawrence.quizon/CoE113_ME2/reg.v
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine rf line 18 in file
+                '/nfs/home/lawrence.quizon/CoE113_ME2/reg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        r_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|      rf/32       |   32   |   32    |      5       | N  |
+|      rf/33       |   32   |   32    |      5       | N  |
+===========================================================
+Presto compilation completed successfully.
+Current design is now '/nfs/home/lawrence.quizon/CoE113_ME2/rf.db:rf'
+Loaded 1 design.
+Current design is 'rf'.
+rf
+current_design rf
+Current design is 'rf'.
+{rf}
+link
+
+  Linking design 'rf'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  rf                          /nfs/home/lawrence.quizon/CoE113_ME2/rf.db
+  saed90nm_typ (library)      /nfs/home/lawrence.quizon/CoE113_ME1/lib/saed90nm_typ.db
+
+1
+check_design > logs/check_design.log
+source timing.con
+1
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | I-2013.12-DWBB_201312.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'rf'
+Information: The register 'r_reg[0][31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'r_reg[0][0]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09   85581.8      0.00       0.0       0.0                          
+    0:00:09   85581.8      0.00       0.0       0.0                          
+    0:00:09   85581.8      0.00       0.0       0.0                          
+    0:00:10   85581.8      0.00       0.0       0.0                          
+    0:00:10   85581.8      0.00       0.0       0.0                          
+    0:00:10   70406.7      0.00       0.0       0.0                          
+    0:00:11   69064.8      0.00       0.0       0.0                          
+    0:00:11   69064.8      0.00       0.0       0.0                          
+    0:00:11   69064.8      0.00       0.0       0.0                          
+    0:00:11   69064.8      0.00       0.0       0.0                          
+    0:00:11   69064.8      0.00       0.0       0.0                          
+    0:00:11   69064.8      0.00       0.0       0.0                          
+    0:00:11   69064.8      0.00       0.0       0.0                          
+    0:00:11   69064.8      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:11   69064.8      0.00       0.0       0.0                          
+    0:00:11   69064.8      0.00       0.0       0.0                          
+    0:00:12   69064.8      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:12   69064.8      0.00       0.0       0.0                          
+    0:00:12   69064.8      0.00       0.0       0.0                          
+    0:00:12   68884.0      0.00       0.0       0.0                          
+    0:00:12   68860.1      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+    0:00:13   68856.2      0.00       0.0       0.0                          
+Loading db file '/nfs/home/lawrence.quizon/CoE113_ME1/lib/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+1
+report_constraint -all_violators > logs/constraint_report.log
+report_area > logs/area_report.log
+report_timing > logs/timing_report.log
+write_sdf -version 1.0 mapped/reg_mapped.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/nfs/home/lawrence.quizon/CoE113_ME2/mapped/reg_mapped.sdf'. (WT-3)
+1
+write -f verilog -hier -out mapped/reg_mapped.v
+Writing verilog file '/nfs/home/lawrence.quizon/CoE113_ME2/mapped/reg_mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+quit
+
+Thank you...
+

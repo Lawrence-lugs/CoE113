@@ -1,0 +1,50 @@
+=======================DVE Context and Call Stack=========================
+Command line: /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1//gui/dve/amd64/bin/dve.exe -full64
+
+--- Stack trace follows:
+[Thread debugging using libthread_db enabled]
+[New Thread 0x7f0402bc6700 (LWP 21077)]
+0x0000003d65cac86d in waitpid () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7f0402bc6700 (LWP 21077)):
+#0  0x0000003d6640b68c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000003d68830920 in ?? () from /usr/lib64/libX11.so.6
+#2  0x0000003d68830fc9 in ?? () from /usr/lib64/libX11.so.6
+#3  0x0000003d68825f1a in XFreeCursor () from /usr/lib64/libX11.so.6
+#4  0x000000000287405d in QCursorData::~QCursorData() ()
+#5  0x0000000002874534 in QCursor::~QCursor() ()
+#6  0x000000000287456c in ?? ()
+#7  0x0000003d65c35992 in exit () from /lib64/libc.so.6
+#8  0x000000000285e1fc in ?? ()
+#9  0x0000003d6884488e in _XIOError () from /usr/lib64/libX11.so.6
+#10 0x0000003d688436ed in _XEventsQueued () from /usr/lib64/libX11.so.6
+#11 0x0000003d6881eb6e in XCheckTypedEvent () from /usr/lib64/libX11.so.6
+#12 0x00000000010076a8 in ag::dveXThread::run() ()
+#13 0x00000000028b291f in QThreadInstance::start(void*) ()
+#14 0x0000003d66407aa1 in start_thread () from /lib64/libpthread.so.0
+#15 0x0000003d65ce8bcd in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7f0402fe07e0 (LWP 20869)):
+#0  0x0000003d65cac86d in waitpid () from /lib64/libc.so.6
+#1  0x0000003d65c3e479 in do_system () from /lib64/libc.so.6
+#2  0x0000003d65c3e7b0 in system () from /lib64/libc.so.6
+#3  0x00007f04049b640c in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e639d2928478c79b3f673f99203bcf8be64600612100082236bffb2007f1e0ef9 () from /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1//amd64/lib/liberrorinf.so
+#4  0x00007f04049b6a0b in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e81c34e9ac4c8988ef4a6e067b3aa9271e9f15440f9e8f69ebc77e2fd65860faa () from /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1//amd64/lib/liberrorinf.so
+#5  0x00007f04049b7dbc in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313efba706aab251478fa49e66610e453774633a6c152e7ef778f2202cda681f3d4e () from /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1//amd64/lib/liberrorinf.so
+#6  0x00007f04049b0196 in SNPSle_d35ca1ff70d465c24c71e1f0ad6ba632 () from /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1//amd64/lib/liberrorinf.so
+#7  0x0000000001f9e338 in ag::logErrorMessage(ag::errorType, QString const&, bool) ()
+#8  0x0000000001f9eba5 in ?? ()
+#9  0x0000003d65c3596a in exit () from /lib64/libc.so.6
+#10 0x000000000285e1fc in ?? ()
+#11 0x0000003d6884488e in _XIOError () from /usr/lib64/libX11.so.6
+#12 0x0000003d688436ed in _XEventsQueued () from /usr/lib64/libX11.so.6
+#13 0x0000003d6883437d in XPending () from /usr/lib64/libX11.so.6
+#14 0x000000000287a8cc in QEventLoop::processEvents(unsigned int) ()
+#15 0x000000000104da29 in ag::ovaEventLoop::processEvents(unsigned int) ()
+#16 0x00000000028c9ac9 in QEventLoop::enterLoop() ()
+#17 0x00000000028c9a4a in QEventLoop::exec() ()
+#18 0x000000000104d3e1 in run_cci_event_loop ()
+#19 0x000000000100a2ab in ag::ovaAppInst::enterEventLoop(int, char**) ()
+#20 0x0000000000db357a in main ()
+No context available
+==========================================================================

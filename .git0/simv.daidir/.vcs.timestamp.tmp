@@ -1,0 +1,109 @@
+1        
+0 ./mapped/reg_mapped.sdf_c
+33
++cli+1
++itf+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcsdp.tab
++memcbk
++neg_tchk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -O -I/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=
+-Mobjects= /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Xcbug=0x1
+-Xvcs_run_simv=1
+-debug=1
+-full64
+-gen_obj
+-l
+-pp_used
+../CoE113_ME1/lib/saed90nm.v
+./mapped/reg_mapped.v
+/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/bin/vcs1
+mem.v
+tb_reg.v
+vcs.log
+59
+sysc_uni_pwd=/nfs/home/lawrence.quizon/CoE113_ME2
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=vcs.log
+VCS_HOME=/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/
+VCS_DEPTH=0
+VCS_BIN=/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/bin
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=amd64
+UNAME=/bin/uname
+TOOL_HOME=/nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64
+SYN_BIN=/nfs/cad/synopsys/syn/I-2013.12/bin
+SSH_TTY=/dev/pts/0
+SSH_CONNECTION=10.158.38.179 61638 10.158.16.127 22
+SSH_CLIENT=10.158.38.179 61638 22
+SSH_AUTH_SOCK=/tmp/ssh-ORsSFN5383/agent.5383
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPECTRE_DEFAULTS=-E
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+QRC_ENABLE_EXTRACTION=t
+OVA_UUM=0
+MMSIMLIBPATH2=/nfs/cad/cadence/MMSIM131/tools.lnx86/inca/lib/
+MMSIMLIBPATH1=/nfs/cad/cadence/MMSIM131/tools.lnx86/lib/
+MMSIMHOME=/nfs/cad/cadence/MMSIM131
+MMSIMBIN2=/nfs/cad/cadence/MMSIM131/tools.lnx86/dfII/bin
+MMSIMBIN1=/nfs/cad/cadence/MMSIM131/tools.lnx86/bin
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KRB5CCNAME=FILE:/tmp/krb5cc_2339_pMnjIU5371
+KDEDIRS=/usr
+IUSLIBPATH2=/nfs/cad/cadence/INCISIVE152/tools.lnx86/inca/lib/
+IUSLIBPATH1=/nfs/cad/cadence/INCISIVE152/tools.lnx86/lib
+IUSHOME=/nfs/cad/cadence/INCISIVE152
+IUSBIN2=/nfs/cad/cadence/INCISIVE152/tools.lnx86/dfII/bin
+IUSBIN1=/nfs/cad/cadence/INCISIVE152/tools.lnx86/bin
+ICLIBPATH2=/nfs/cad/cadence/IC616/tools.lnx86/lib64
+ICLIBPATH1=/nfs/cad/cadence/IC616/tools.lnx86/lib
+ICBIN2=/nfs/cad/cadence/IC616/tools.lnx86/dfII/bin
+ICBIN1=/nfs/cad/cadence/IC616/tools.lnx86/bin
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+EXTHOME=/nfs/cad/cadence/EXT141
+EXTBIN=/nfs/cad/cadence/EXT141/tools.lnx86/bin
+CVS_RSH=ssh
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CWDElseHome
+CDS_LIC_FILE=5280@10.158.16.12
+CDS_AUTO_64BIT=ALL
+CDSHOME=/nfs/cad/cadence/IC616
+CDSDIR=/nfs/cad/cadence
+CDS=/nfs/cad/cadence/IC616
+ASSURAHOME=/nfs/cad/cadence/ASSURA414
+ASSURABIN2=/nfs/cad/cadence/ASSURA414/tools.lnx86/assura/bin
+ASSURABIN1=/nfs/cad/cadence/ASSURA414/tools.lnx86/bin
+0
+6
+1580867549 ./mapped/reg_mapped.sdf
+1580867428 tb_reg.v
+1486449100 mem.v
+1409007543 ../CoE113_ME1/lib/saed90nm.v
+1580867572 ./mapped/reg_mapped.v
+1385611634 /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcsdp.tab
+4
+0 
+1385615966 /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so
+1385615701 /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so
+1385615452 /nfs/cad/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so
